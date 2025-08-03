@@ -8,9 +8,9 @@ Carga todos los datasets ubicados en la carpeta `dataset_fifa`, incluyendo archi
 
 ---
 
-### `comparar_jugadores.py`
-- Compara los jugadores entre las carpetas `jugadores_agregados` y `jugadores_eliminados`.
-- Genera un archivo `jugadores_activos_2020.csv` en la carpeta `jugadores_actualizados_2020`, conteniendo solo los jugadores que **no fueron eliminados hasta 2020**.
+### `comparador_dataset.py`
+- Compara los jugadores entre las carpetas `jugadores_agregados` y `jugadores_eliminados`.- 
+- Genera archivos CSV mostrando por año los jugadores eliminados o agregados en las carpetas `jugadores_agregados` y `jugadores_eliminados`
 
 ---
 
@@ -23,6 +23,11 @@ Carga todos los datasets ubicados en la carpeta `dataset_fifa`, incluyendo archi
 
 ---
 
+
+###  `generador_dataset_actualizado.py`
+- Compara jugadores eliminados y agregados por año.
+- Compara los jugadores entre las carpetas `jugadores_agregados` y `jugadores_eliminados`.
+- Genera un archivo `jugadores_activos_2020.csv` en la carpeta `jugadores_actualizados_2020`, conteniendo solo los jugadores que **no fueron eliminados hasta 2020**.
 ## ▶️ Cómo ejecutar
 
 Asegúrate de tener Python y las librerías necesarias instaladas:
