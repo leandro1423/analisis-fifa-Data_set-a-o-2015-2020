@@ -1,0 +1,24 @@
+import os
+import pandas as pd
+
+ruta_datasets = os.path.join("..", "datasets")
+dataframes = {}
+
+for archivo in os.listdir(ruta_datasets):
+    ruta_archivo = os.path.join(ruta_datasets, archivo)
+    nombre_base = os.path.splitext(archivo)[0]
+
+    try:
+        if archivo.endswith(".xlsx"):
+            df = pd.read_excel(ruta_archivo)
+        elif archivo.endswith(".csv"):
+            df = pd.read_csv(ruta_archivo, encoding='utf-8')  # O 'latin1' si hay tildes y errores
+        else:
+            print(f"[IGNORADO] {archivo} no es .xlsx ni .csv")
+            continue
+
+        dataframes[nombre_base] = df
+        print(f"[OK] '{archivo}' cargado. Filas: {df.shape[0]}, Columnas: {df.shape[1]}")
+
+    except Exception as e:
+        print(f"[ERROR] No se pudo leer '{archivo}': {e}")
