@@ -78,3 +78,26 @@ for anio in sorted(agregados_por_anio.keys()):
             plt.close()
 
 print("[FINALIZADO] Gráficas guardadas en la carpeta 'estadisticas'")
+
+
+# ---------- NOTA ----------
+# Asegúrate de que los archivos CSV tengan las columnas
+# 'national
+# Si alguna columna no existe, se omitirá esa parte del análisis.
+# Puedes ajustar los nombres de las columnas según tu dataset.
+# Además, verifica que las rutas sean correctas según tu estructura de carpetas.
+# Si encuentras algún error, revisa los nombres de los archivos y las columnas.
+# Las gráficas se guardarán en la carpeta 'estadisticas' dentro de 'dataset_f
+
+# fifa'.
+# Puedes personalizar los colores y estilos de las gráficas según tus preferencias.
+# Si necesitas más análisis o estadísticas, puedes agregar más secciones al script.
+# Si deseas realizar un análisis más detallado, considera agregar más columnas
+# o métricas a los dataframes antes de generar las gráficas.
+# También puedes explorar otras visualizaciones como gráficos de líneas o dispersión
+# para analizar tendencias a lo largo de los años.
+# Recuerda que este script es un punto de partida y puedes adaptarlo a tus necesidades.
+
+
+# Si tienes alguna duda o necesitas ayuda adicional, no dudes en preguntar.
+# ¡Buena suerte con tu análisis de jugadores de FIFA!
